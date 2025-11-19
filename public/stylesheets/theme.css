@@ -1,0 +1,19 @@
+:root {
+    
+    --color-morado-p: #667eea;
+    --color-morado-s: #764ba2;
+    --color-fondo-claro: #f5f7fa;
+    --color-fondo-gris: #c3cfe2;
+   
+    --color-borde: #e0e0e0;
+    --color-fondo-cancelar: #f0f0f0;
+    --color-footer:#2c3e50;
+    --color-blanco: #ffffff;
+  
+    --gradiente-p: linear-gradient(135deg, var(--color-morado-p) 0%, var(--color-morado-s) 100%);
+    --gradiente-s: linear-gradient(135deg, var(--color-fondo-claro) 0%, var(--color-fondo-gris) 100%);
+    
+    --font-base: sans-serif;
+  
+    --min-height-card: 250px;
+}

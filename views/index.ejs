@@ -2,97 +2,105 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RetroBlog</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mi Aplicación - Bienvenido</title>
+    <link rel="stylesheet" href="stylesheets/theme.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<div ></div>
 <body>
 
-    <div class="contenedor-revista">
-
-        <header class="cabecera-blog">
-            <div class="logo-blog">RetroBlog</div>
-            <p class="subtitulo-blog">Un blog para amantes del retro</p>
-        </header>
-
-        <nav class="menu-categorias">
-            <ul class="lista-categorias">
-                <li><a href="#">Atari</a></li>
-                <li><a href="#">ordenadores</a></li>
-                <li><a href="#">consolas</a></li>
-                <li><a href="#">videojuegos</a></li>
+    <header class="cabecera">
+        <div class="logo">
+          <h1 class="logo-estilo">Mi aplicacion</h1>
+        </div>
+        
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+    </header>
 
-        <main class="cuerpo-revista">
+    <main class="zona-principal">
+        
+        <section class="hero-card">
             
-            <article class="noticia-principal">
-                <figure class="media-noticia">
-                    <picture>
-                        <source srcset="URL_IMAGEN_PRINCIPAL_WEBP" type="image/webp">
-                        <img src="URL_IMAGEN_PRINCIPAL_JPEG" alt="Noticia destacada">
-                    </picture>
-                    <div class="overlay-texto">
-                        <h2>Amiga 500: El Ordenador Revolucionario de Commodore</h2>
-                    </div>
-                </figure>
-            </article>
+            <div class="Texto">
+                <h2 >¡Bienvenido!</h2>
+                <p>Descubre todas las funcionalidades que tenemos preparadas para ti. Únete a nuestra comunidad y empieza a disfrutar de una experiencia única.</p>
+                <p>Accede a tu cuenta o regístrate en segundos para comenzar tu aventura con nosotros.</p>
+            </div>
+            
+            <div class="card-interiores">
+                
+                <div class="registrado" id="card-registrado">
+                    <p class="registrado-texto">Ya estoy registrado</p>
+                    <form class="slide-form" id="form-registrado" novalidate>
+                        <label for="email-registrado"></label>
+                        <input type="email" id="email-registrado" name="email" placeholder="danigalachosoler@gmail.com" required>
 
-            <section class="noticias-stack">
-                <a href="#" class="enlace-noticia-stack">
-                    <h4>ChatGPT en educación</h4>
-                    <p>Los docentes debaten sus ventajas y riesgos.</p>
-                </a>
-                <a href="#" class="enlace-noticia-stack">
-                    <h4>El futuro del 6G</h4>
-                    <p>Velocidades que multiplicarán las del 5G.</p>
-                </a>
-                <a href="#" class="enlace-noticia-stack">
-                    <h4>Realidad aumentada</h4>
-                    <p>Apple y Meta apuestan por el metaverso productivo.</p>
-                </a>
-            </section>
+                        <label for="password-registrado"></label>
+                        <input type="password" id="password-registrado" name="password" placeholder="••••••" required>
 
-            <aside class="barra-popular">
-                <h3>Artículos populares</h3>
-                <ul>
-                    <li><a href="#">10 extensiones de VSCode imprescindibles</a></li>
-                    <li><a href="#">Cómo mejorar tu productividad con Notion</a></li>
-                    <li><a href="#">Lenguajes de programación más demandados</a></li>
-                    <li><a href="#">Comparativa: portátiles para desarrollo</a></li>
-                </ul>
-            </aside>
+                        <div class="botones-form">
+                            <button type="submit" class="btn-gradiente">Enviar</button>
+                            <button type="button" class="btn-secundario" id="cancelar-registrado">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="registrado">
+                    <p>No estoy registrado aún</p>
+                </div>
 
-            <section class="articulos-inferiores">
-                <article class="articulo-tarjeta">
-                    <figure><img src="URL_IMAGEN_1" alt="Artículo destacado" loading="lazy"></figure>
-                    <h4>Robótica doméstica: ¿un lujo o una necesidad?</h4>
-                    <p>La automatización llega a los hogares con robots más accesibles.</p>
-                </article>
+            </div>
+            
+        </section>
 
-                <article class="articulo-tarjeta">
-                    <figure><img src="URL_IMAGEN_2" alt="Chip de ordenador" loading="lazy"></figure>
-                    <h4>Chip M4 de Apple: potencia y eficiencia</h4>
-                    <p>Los nuevos chips de 3nm prometen revolucionar el rendimiento.</p>
-                </article>
+    </main>
 
-                <article class="articulo-tarjeta">
-                    <figure><img src="URL_IMAGEN_3" alt="Placa base con luces" loading="lazy"></figure>
-                    <h4>Criptomonedas 2025</h4>
-                    <p>Bitcoin y Ethereum se estabilizan mientras surgen nuevas tendencias DeFi.</p>
-                </article>
-            </section>
-        </main>
-
-        <footer class="pie-pagina">
-            <p>© 2025 TechNow Magazine</p>
-            <nav class="menu-legal">
-                <a href="#">Aviso legal</a>
-                <a href="#">Privacidad</a>
-                <a href="#">Contacto</a>
-            </nav>
+    <footer>
+      <p>By Danielgalacho</p>
         </footer>
 
-    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cardRegistrado = document.getElementById('card-registrado');
+        const cancelarBtn = document.getElementById('cancelar-registrado');
+        const formRegistrado = document.getElementById('form-registrado');
+
+        const abrirFormulario = () => {
+            cardRegistrado.classList.add('activo');
+        };
+
+        const cerrarFormulario = () => {
+            cardRegistrado.classList.remove('activo');
+            formRegistrado.reset();
+        };
+
+        cardRegistrado.addEventListener('click', (event) => {
+            if (cardRegistrado.classList.contains('activo')) {
+                return;
+            }
+            abrirFormulario();
+        });
+
+        formRegistrado.addEventListener('click', (event) => event.stopPropagation());
+        formRegistrado.addEventListener('submit', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            // Aquí podrías realizar la lógica de envío real.
+        });
+
+        cancelarBtn.addEventListener('click', (event) => {
+            event.stopPropagation();
+            cerrarFormulario();
+        });
+    });
+</script>
+
 </body>
 </html>
