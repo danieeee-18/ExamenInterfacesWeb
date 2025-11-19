@@ -40,9 +40,9 @@ body {
 .navegacion li a {
   color: var(--color-blanco);
   text-decoration: none;
-  padding: 10px 15px;
-  transition: background-color 0.3s;
-  font-size: 1.2rem;
+  padding: 12px 13px;
+  transition: background-color 0.4s;
+  font-size: 1.3rem;
 
 }
 
@@ -57,7 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 22px;
 }
 
 .hero-card {
@@ -75,9 +75,9 @@ body {
 
 .Texto h2 {
   color: var(--color-morado-p);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .Texto {
@@ -89,10 +89,11 @@ body {
 
 .Texto p {
   
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   color: #444;
   line-height: 1.6;
-  text-align: center;
+  margin: 12;
+  
 }
 
 .card-interiores {
@@ -118,6 +119,9 @@ body {
   font-weight: bold;
   transition: opacity 0.3s, box-shadow 0.3s, justify-content 0.3s;
   overflow: hidden;
+}
+.registrado p {
+  align-items: center;
 }
 
 .registrado:hover {
